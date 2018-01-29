@@ -6,3 +6,4 @@ from django.apps import AppConfig
 
 class DumpsConfig(AppConfig):
     name = 'dumps'
+    verbose_name = 'ROM Dump Database'
