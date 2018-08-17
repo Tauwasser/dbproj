@@ -1,5 +1,29 @@
 {% extends 'dumps/base.html' %}
 
+{% block javascript %}
+  <script type="text/javascript">
+    $('#id_search').change(function () {
+      console.log( $(this).val() );
+
+      var searchVal = $(this).val();
+
+      $.ajax({
+        url: '/dump/ajax/find_games/',
+        data: {
+          'searchTerm': searchVal
+        },
+        success: function (data) {
+            $("#id_search_result > tr").remove();
+            $.each(data.games_found, function(index, value) {
+                $('<tr><td>' + value.codes.join(', ') + '</td><td>' + value.name + '</td></tr>').appendTo('#id_search_result');
+            });
+        }
+      });
+
+    });
+  </script>
+{% endblock %}
+
 {% block content %}
     <input type="text" required="" name="search" maxlength="30" id="id_search" autofocus="">
     <table border="1"><thead><tr><td>Codes</td><td>Name</td></tr></thead><tbody id="id_search_result"></tbody></table>
