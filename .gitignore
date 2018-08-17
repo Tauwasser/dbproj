@@ -1,5 +1,5 @@
 *.pyc
 *.swp
 local_settings.py
-static/
+static/*
 project
