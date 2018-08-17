@@ -1,5 +1,7 @@
 from settings import *
 
+SECRET_KEY = 'oo8=+1)kmkf)j5bs5m45l4z3xw+sijm^vm@j)-)d)3bpv-4gc9'
+
 # Enable Debugging
 #DEBUG = True
 
