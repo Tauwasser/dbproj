@@ -3,3 +3,5 @@
 local_settings.py
 static/*
 project
+.idea/*
+venv/*
