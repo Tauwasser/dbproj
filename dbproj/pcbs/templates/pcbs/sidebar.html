@@ -1,0 +1,19 @@
+<div class="nav-tree">
+	<ul>
+	{% for system in systems.all|dictsort:"name" %}
+	<li><input type="checkbox" id="item{{ forloop.counter0 }}"{% if system == sel_system %} checked="checked"{% endif %}/><label{% if system == sel_system %} class="label-icon"{% endif %} for="item{{ forloop.counter0 }}">{{ system.name }}</label>
+		<ul>
+		{% for group in system.pcbgroup_set.all|dictsort:"name"|dictsortreversed:"is_default_group" %}
+		<li><input type="checkbox" id="item{{ forloop.parentloop.counter0 }}-{{ forloop.counter0 }}"{% if group.is_default_group %} checked="checked"{% endif %}/><label for="item{{ forloop.parentloop.counter0 }}-{{ forloop.counter0 }}">{{ group.name }}</label>
+			<ul>
+			{% for pcb in group.pcb_set.all|dictsort:"name" %}
+			<li><a href="{% url 'details' system pcb.name %}">{{ pcb.name }}</a></li>
+			{% endfor %}
+			</ul>
+		</li>
+		{% endfor %}
+		</ul>
+	</li>
+	{% endfor %}
+	</ul>
+</div>

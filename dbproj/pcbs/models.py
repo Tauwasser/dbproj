@@ -11,9 +11,22 @@ class System(models.Model):
     def __str__(self):
         return self.name
 
+class PCBGroup(models.Model):
+    system = models.ForeignKey(System, on_delete=models.SET_NULL, null=True)
+    name = models.CharField(max_length=16)
+    is_default_group = models.BooleanField(default=False,verbose_name='Default Group')
+
+    class Meta:
+        verbose_name = 'PCB Group'
+        verbose_name_plural = 'PCB Groups'
+        unique_together = (('system', 'name'),)
+
+    def __str__(self):
+        return self.system.name + '/' + self.name
+
 class PCB(models.Model):
     name = models.CharField(max_length=32)
-    system = models.ForeignKey(System, on_delete=models.SET_NULL, null=True)
+    group = models.ForeignKey(PCBGroup, on_delete=models.SET_NULL, null=True)
 
     class Meta:
         verbose_name = 'PCB'
@@ -25,7 +38,7 @@ class PCB(models.Model):
 class PCBRevision(models.Model):
     pcb = models.ForeignKey(PCB, on_delete=models.PROTECT)
     label = models.CharField(max_length=16, blank=True)
-    differences = models.TextField(blank=True)
+    changes = models.TextField(blank=True)
     is_base_revision = models.BooleanField(default=False,verbose_name='Base Revision')
 
     class Meta:
@@ -37,4 +50,3 @@ class PCBRevision(models.Model):
         if ('' != self.label):
             return self.pcb.name + '-' + self.label
         return self.pcb.name
-

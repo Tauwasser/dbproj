@@ -1,0 +1,10 @@
+{% load static %}
+<head><link rel="stylesheet" type="text/css" href="{% static 'pcbs/details.css' %}" /></head>
+<body>
+<div style="width: 10%; float: left;">{% include 'pcbs/sidebar.html' %}</div>
+<div style="width: 90%;">
+{% for pcb_candidate in pcb_candidates.all %}
+- {{pcb_candidate.name}}: {% for pcb_revision in pcb_candidate.pcbrevision_set.all %} * {{ pcb_revision }} {% endfor %}
+{% endfor %}
+</div>
+</body>

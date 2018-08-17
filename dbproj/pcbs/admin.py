@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from .models import System
-from .models import PCB, PCBRevision
+from .models import PCB, PCBGroup, PCBRevision
 
 class PCBRevisionInline(admin.StackedInline):
     model = PCBRevision
@@ -9,10 +9,11 @@ class PCBRevisionInline(admin.StackedInline):
 
 class PCBAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None, {'fields': ['name', 'system']}),
+        (None, {'fields': ['name', 'group']}),
     ]
     inlines = [PCBRevisionInline]
 
 admin.site.register(System)
 admin.site.register(PCB, PCBAdmin)
+admin.site.register(PCBGroup)
 

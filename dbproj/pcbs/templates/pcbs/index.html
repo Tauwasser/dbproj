@@ -1,0 +1,8 @@
+{% for system in systems.all %}
+<h1>{{ system.name }}</h1>
+<ul>
+{% for pcb in system.pcb_set.all %}
+    <li>{{ pcb.name }}</li>
+{% endfor %}
+</ul>
+{% endfor %}

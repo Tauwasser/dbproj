@@ -1,0 +1,126 @@
+.nav-tree ul,
+.nav-tree li
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* re-activate bulets in second level */
+.nav-tree ul ul ul li
+{
+	list-style: inside;
+}
+
+.nav-tree input
+{
+    position: absolute;
+    opacity: 0;
+}
+
+/* let text selection enabled for now */
+/*.nav-tree
+{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}*/
+
+.nav-tree a
+{
+    color: #00f;
+    text-decoration: none;
+}
+ 
+.nav-tree a:hover
+{
+    text-decoration: underline;
+}
+ 
+.nav-tree input + label + ul
+{
+    margin: 0 0 0 22px;
+}
+ 
+.nav-tree input ~ ul
+{
+    display: none;
+}
+
+.nav-tree label,
+.nav-tree label::before
+{
+    cursor: pointer;
+}
+ 
+.nav-tree input:disabled + label
+{
+    cursor: default;
+    opacity: .6;
+}
+ 
+.nav-tree input:checked:not(:disabled) ~ ul
+{
+    display: block;
+}
+
+.nav-tree label.label-icon,
+.nav-tree label::before
+{
+    background: url("./icons.png") no-repeat;
+}
+ 
+.nav-tree label,
+.nav-tree a,
+.nav-tree label::before
+{
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+ 
+.nav-tree label.label-icon
+{
+    background-position: 18px 0;
+}
+ 
+.nav-tree label::before
+{
+    content: "";
+    width: 16px;
+    vertical-align: middle;
+    background-position: 0 -32px;
+}
+
+.nav-tree label.label-icon::before
+{
+    margin: 0 22px 0 0;
+}
+ 
+.nav-tree input:checked + label::before
+{
+    background-position: 0 -16px;
+}
+
+/* webkit adjacent element selector bugfix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    .css-treeview 
+    {
+        -webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
+    }
+ 
+    @-webkit-keyframes webkit-adjacent-element-selector-bugfix 
+    {
+        from 
+        { 
+            padding: 0;
+        } 
+        to 
+        { 
+            padding: 0;
+        }
+    }
+}
+
