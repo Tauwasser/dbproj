@@ -7,6 +7,20 @@
     }
   },
   {
+    "model": "pcbs.manufacturer",
+    "pk": 2,
+    "fields": {
+      "name": "Sachen"
+    }
+  },
+  {
+    "model": "pcbs.manufacturer",
+    "pk": 3,
+    "fields": {
+      "name": "Gowin"
+    }
+  },
+  {
     "model": "pcbs.system",
     "pk": 1,
     "fields": {
@@ -23,47 +37,12 @@
     }
   },
   {
-    "model": "pcbs.pcbgroup",
-    "pk": 1,
-    "fields": {
-      "system": 1,
-      "name": "Nintendo",
-      "is_default_group": true
-    }
-  },
-  {
-    "model": "pcbs.pcbgroup",
-    "pk": 2,
-    "fields": {
-      "system": 1,
-      "name": "Sachen",
-      "is_default_group": false
-    }
-  },
-  {
-    "model": "pcbs.pcbgroup",
-    "pk": 3,
-    "fields": {
-      "system": 2,
-      "name": "Nintendo",
-      "is_default_group": true
-    }
-  },
-  {
-    "model": "pcbs.pcbgroup",
-    "pk": 4,
-    "fields": {
-      "system": 1,
-      "name": "Gowin",
-      "is_default_group": false
-    }
-  },
-  {
     "model": "pcbs.pcb",
     "pk": 1,
     "fields": {
       "name": "SA-111",
-      "group": 2
+      "system": 1,
+      "manufacturer": 2
     }
   },
   {
@@ -71,7 +50,8 @@
     "pk": 4,
     "fields": {
       "name": "SA-113",
-      "group": 2
+      "system": 1,
+      "manufacturer": 2
     }
   },
   {
@@ -79,7 +59,8 @@
     "pk": 5,
     "fields": {
       "name": "SA-114",
-      "group": 2
+      "system": 1,
+      "manufacturer": 2
     }
   },
   {
@@ -87,7 +68,8 @@
     "pk": 6,
     "fields": {
       "name": "DMG-BEAN",
-      "group": 1
+      "system": 1,
+      "manufacturer": 1
     }
   },
   {
@@ -95,7 +77,8 @@
     "pk": 7,
     "fields": {
       "name": "DMG-BCA",
-      "group": 1
+      "system": 1,
+      "manufacturer": 1
     }
   },
   {
@@ -103,7 +86,8 @@
     "pk": 8,
     "fields": {
       "name": "DMG-BFAN",
-      "group": 1
+      "system": 1,
+      "manufacturer": 1
     }
   },
   {
@@ -111,7 +95,8 @@
     "pk": 9,
     "fields": {
       "name": "DMG-BBA",
-      "group": 1
+      "system": 1,
+      "manufacturer": 1
     }
   },
   {
@@ -119,7 +104,17 @@
     "pk": 10,
     "fields": {
       "name": "DMG-AAA",
-      "group": 1
+      "system": 1,
+      "manufacturer": 1
+    }
+  },
+  {
+    "model": "pcbs.pcb",
+    "pk": 11,
+    "fields": {
+      "name": "VUE-AA",
+      "system": 2,
+      "manufacturer": 1
     }
   },
   {
@@ -227,6 +222,16 @@
     "pk": 16,
     "fields": {
       "pcb": 8,
+      "label": "01",
+      "changes": "",
+      "is_base_revision": true
+    }
+  },
+  {
+    "model": "pcbs.pcbrevision",
+    "pk": 17,
+    "fields": {
+      "pcb": 11,
       "label": "01",
       "changes": "",
       "is_base_revision": true
