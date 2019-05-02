@@ -8,7 +8,9 @@
 		{% for manufacturer, pcbs in manufacturer_pcbs.items %}
 		{% if pcbs %}
 		<li>
-			<input type="checkbox" id="item{{ forloop.parentloop.counter0 }}-{{ forloop.counter0 }}"{% if manufacturer == pcb.manufacturer %} checked="checked"{% endif %}/>
+			<input type="checkbox" id="item{{ forloop.parentloop.counter0 }}-{{ forloop.counter0 }}"
+				{% if manufacturer == pcb.manufacturer or manufacturer.name == 'Nintendo' %} checked="checked"{% endif %}
+			/>
 			<label for="item{{ forloop.parentloop.counter0 }}-{{ forloop.counter0 }}">{{ manufacturer }}</label>
 			<ul>
 			{% for pcb in pcbs|dictsort:"name" %}
