@@ -1,0 +1,2664 @@
+[
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "dumps",
+      "model": "system"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "pcbs",
+      "model": "system"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "pcbs",
+      "model": "pcb"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "pcbs",
+      "model": "pcbrevision"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "pcbs",
+      "model": "pcbgroup"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "dumps",
+      "model": "game"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "dumps",
+      "model": "language"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "dumps",
+      "model": "gametitle"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "pcbs",
+      "model": "manufacturer"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "0xyx3g1jm6q5as3abziusiwpzyb9it73",
+    "fields": {
+      "session_data": "YWE0MGZlNTEyMzQ5YjkxOWFhZTk1MDhkYWM5NmVmN2QyMDAwOWJkNjp7Il9hdXRoX3VzZXJfaGFzaCI6Ijg3OGFlMWNiMWE1NGYyZTlkZjk1MGMwZGMxNzVkMDkzODk5MTdkNzIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+      "expire_date": "2018-02-11T18:05:18.722Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "cpt20kdfvloodjcmo6kj4u8cuzfd99e7",
+    "fields": {
+      "session_data": "YWE0MGZlNTEyMzQ5YjkxOWFhZTk1MDhkYWM5NmVmN2QyMDAwOWJkNjp7Il9hdXRoX3VzZXJfaGFzaCI6Ijg3OGFlMWNiMWE1NGYyZTlkZjk1MGMwZGMxNzVkMDkzODk5MTdkNzIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+      "expire_date": "2018-02-11T20:31:25.045Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "cx3cdqdjp58iageicm96gz5g9pah6fvf",
+    "fields": {
+      "session_data": "YjJkMTljMzE0YjAxNmMwMjJlMzU5M2Q1NTYwYmM2NWYwMGRjNTZiYjp7Il9hdXRoX3VzZXJfaGFzaCI6Ijg3OGFlMWNiMWE1NGYyZTlkZjk1MGMwZGMxNzVkMDkzODk5MTdkNzIiLCJfYXV0aF91c2VyX2lkIjoiMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+      "expire_date": "2018-04-22T15:57:26.012Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "erdfxokxujri76bimw41ev7mgcp49atf",
+    "fields": {
+      "session_data": "ZGI3YzI2ZTJkOGE2YWMzMTgyN2UzMjI5OTRjZWVjZTM2MWI2MTUxNjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMmIzZThhOWZhNWYyNTBkNGQzMTAxMjhiMzJmZjczNzM0NDZlODAyYyIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+      "expire_date": "2019-04-21T13:30:51.340Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "j0svof1vv99m6jnnrncn7fxsd2mwtd46",
+    "fields": {
+      "session_data": "M2JiMWMyNGQ0NzU4YjZkZTVmYjQxYzA0MWRhOGU3NjRlMjdmNGIzNzp7Il9hdXRoX3VzZXJfaGFzaCI6IjBjYjcyZTZlYWQ5MzM1ZjAxZmIwODVjN2YzNDEwYzA1MDhhZDRiOGYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+      "expire_date": "2017-12-02T22:54:24.535Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "mjxq010rny0t3196iyg8jyxni6ugebk5",
+    "fields": {
+      "session_data": "N2Q2ZjYwZTNkMzE0YzI5MWZjZGI1MDc5ZDNiMTM5OThiM2E2YmJjZDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9oYXNoIjoiMmIzZThhOWZhNWYyNTBkNGQzMTAxMjhiMzJmZjczNzM0NDZlODAyYyIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+      "expire_date": "2019-05-16T13:57:10.796Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "xtb21jrqo32v01u85qzeb1vb7c989dl5",
+    "fields": {
+      "session_data": "OTRiZmJjNGQ1OWNmNDRiNDM4ZDg4MmM4NmM4ZDFjNzU5ZDEzMDE0Njp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZDQ3OTBmMjYzOTZkY2IxNDBiMGZkNTQzOTdkNzJhY2QwNTIzYTViZiIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+      "expire_date": "2018-08-28T10:35:19.445Z"
+    }
+  },
+  {
+    "model": "dumps.language",
+    "pk": 1,
+    "fields": {
+      "name": "German",
+      "localName": "Deutsch",
+      "ietfTag": "de",
+      "isDisplayLanguage": true,
+      "isLatinScript": true
+    }
+  },
+  {
+    "model": "dumps.language",
+    "pk": 2,
+    "fields": {
+      "name": "English",
+      "localName": "English",
+      "ietfTag": "en",
+      "isDisplayLanguage": true,
+      "isLatinScript": true
+    }
+  },
+  {
+    "model": "dumps.language",
+    "pk": 3,
+    "fields": {
+      "name": "Japanese",
+      "localName": "\u65e5\u672c\u8a9e",
+      "ietfTag": "ja",
+      "isDisplayLanguage": true,
+      "isLatinScript": false
+    }
+  },
+  {
+    "model": "dumps.language",
+    "pk": 4,
+    "fields": {
+      "name": "Japanese (romanized)",
+      "localName": "Japanese (romanized)",
+      "ietfTag": "ja-Latn",
+      "isDisplayLanguage": false,
+      "isLatinScript": true
+    }
+  },
+  {
+    "model": "dumps.language",
+    "pk": 5,
+    "fields": {
+      "name": "French",
+      "localName": "fran\u00e7ais",
+      "ietfTag": "fr",
+      "isDisplayLanguage": true,
+      "isLatinScript": true
+    }
+  },
+  {
+    "model": "dumps.language",
+    "pk": 6,
+    "fields": {
+      "name": "Italian",
+      "localName": "italiano",
+      "ietfTag": "it",
+      "isDisplayLanguage": true,
+      "isLatinScript": true
+    }
+  },
+  {
+    "model": "dumps.language",
+    "pk": 7,
+    "fields": {
+      "name": "Spanish",
+      "localName": "espa\u00f1ol",
+      "ietfTag": "es",
+      "isDisplayLanguage": true,
+      "isLatinScript": true
+    }
+  },
+  {
+    "model": "dumps.language",
+    "pk": 8,
+    "fields": {
+      "name": "Swedish",
+      "localName": "svenska",
+      "ietfTag": "sv",
+      "isDisplayLanguage": true,
+      "isLatinScript": true
+    }
+  },
+  {
+    "model": "dumps.language",
+    "pk": 9,
+    "fields": {
+      "name": "Dutch",
+      "localName": "Nederlands",
+      "ietfTag": "nl",
+      "isDisplayLanguage": true,
+      "isLatinScript": true
+    }
+  },
+  {
+    "model": "dumps.language",
+    "pk": 10,
+    "fields": {
+      "name": "Chinese (Traditional)",
+      "localName": "\u4e2d\u6587 (\u7e41\u9ad4)",
+      "ietfTag": "zh-Hant",
+      "isDisplayLanguage": true,
+      "isLatinScript": false
+    }
+  },
+  {
+    "model": "dumps.language",
+    "pk": 11,
+    "fields": {
+      "name": "Chinese (Simplified)",
+      "localName": "\u4e2d\u6587 (\u7b80\u4f53)",
+      "ietfTag": "zh-Hans",
+      "isDisplayLanguage": true,
+      "isLatinScript": false
+    }
+  },
+  {
+    "model": "dumps.system",
+    "pk": 1,
+    "fields": {
+      "name": "Game Boy",
+      "manufacturer": "Nintendo"
+    }
+  },
+  {
+    "model": "dumps.system",
+    "pk": 2,
+    "fields": {
+      "name": "Virtual Boy",
+      "manufacturer": "Nintendo"
+    }
+  },
+  {
+    "model": "dumps.game",
+    "pk": "55fa3f0a-a8c8-4f42-adf7-8c13d2e9bfd9",
+    "fields": {
+      "system": 1,
+      "langs": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "dumps.game",
+    "pk": "f0a09c52-eb59-4f26-8ed6-71f6fb74e1f2",
+    "fields": {
+      "system": 1,
+      "langs": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "dumps.game",
+    "pk": "f83918e4-9fdb-48d8-aa41-12a9cb371e5b",
+    "fields": {
+      "system": 1,
+      "langs": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "dumps.gametitle",
+    "pk": 1,
+    "fields": {
+      "game": "f83918e4-9fdb-48d8-aa41-12a9cb371e5b",
+      "title": "Genjin Collection",
+      "lang": 4,
+      "code": "DMG-AG3J-JPN"
+    }
+  },
+  {
+    "model": "dumps.gametitle",
+    "pk": 2,
+    "fields": {
+      "game": "f83918e4-9fdb-48d8-aa41-12a9cb371e5b",
+      "title": "\u539f\u4eba\u3000\u30b3\u30ec\u30af\u30b7\u30e7\u30f3",
+      "lang": 3,
+      "code": ""
+    }
+  },
+  {
+    "model": "dumps.gametitle",
+    "pk": 3,
+    "fields": {
+      "game": "55fa3f0a-a8c8-4f42-adf7-8c13d2e9bfd9",
+      "title": "Muppets, The",
+      "lang": 2,
+      "code": "CGB-AX9P-EUR"
+    }
+  },
+  {
+    "model": "dumps.gametitle",
+    "pk": 4,
+    "fields": {
+      "game": "f0a09c52-eb59-4f26-8ed6-71f6fb74e1f2",
+      "title": "Bubble Bobble",
+      "lang": 2,
+      "code": "DMG-B2-NOE"
+    }
+  },
+  {
+    "model": "dumps.gametitle",
+    "pk": 5,
+    "fields": {
+      "game": "f0a09c52-eb59-4f26-8ed6-71f6fb74e1f2",
+      "title": "\u6ce1\u6ce1\u9f99",
+      "lang": 11,
+      "code": "DMG-118 CHN"
+    }
+  },
+  {
+    "model": "dumps.gametitle",
+    "pk": 6,
+    "fields": {
+      "game": "f0a09c52-eb59-4f26-8ed6-71f6fb74e1f2",
+      "title": "\u6ce1\u6ce1\u9f8d",
+      "lang": 10,
+      "code": "DMG-118 CHN"
+    }
+  },
+  {
+    "model": "pcbs.manufacturer",
+    "pk": 1,
+    "fields": {
+      "name": "Nintendo"
+    }
+  },
+  {
+    "model": "pcbs.system",
+    "pk": 1,
+    "fields": {
+      "name": "Game Boy",
+      "manufacturer_fk": 1
+    }
+  },
+  {
+    "model": "pcbs.system",
+    "pk": 2,
+    "fields": {
+      "name": "Virtual Boy",
+      "manufacturer_fk": 1
+    }
+  },
+  {
+    "model": "pcbs.pcbgroup",
+    "pk": 1,
+    "fields": {
+      "system": 1,
+      "name": "Nintendo",
+      "is_default_group": true
+    }
+  },
+  {
+    "model": "pcbs.pcbgroup",
+    "pk": 2,
+    "fields": {
+      "system": 1,
+      "name": "Sachen",
+      "is_default_group": false
+    }
+  },
+  {
+    "model": "pcbs.pcbgroup",
+    "pk": 3,
+    "fields": {
+      "system": 2,
+      "name": "Nintendo",
+      "is_default_group": true
+    }
+  },
+  {
+    "model": "pcbs.pcbgroup",
+    "pk": 4,
+    "fields": {
+      "system": 1,
+      "name": "Gowin",
+      "is_default_group": false
+    }
+  },
+  {
+    "model": "pcbs.pcb",
+    "pk": 1,
+    "fields": {
+      "name": "SA-111",
+      "group": 2
+    }
+  },
+  {
+    "model": "pcbs.pcb",
+    "pk": 4,
+    "fields": {
+      "name": "SA-113",
+      "group": 2
+    }
+  },
+  {
+    "model": "pcbs.pcb",
+    "pk": 5,
+    "fields": {
+      "name": "SA-114",
+      "group": 2
+    }
+  },
+  {
+    "model": "pcbs.pcb",
+    "pk": 6,
+    "fields": {
+      "name": "DMG-BEAN",
+      "group": 1
+    }
+  },
+  {
+    "model": "pcbs.pcb",
+    "pk": 7,
+    "fields": {
+      "name": "DMG-BCA",
+      "group": 1
+    }
+  },
+  {
+    "model": "pcbs.pcb",
+    "pk": 8,
+    "fields": {
+      "name": "DMG-BFAN",
+      "group": 1
+    }
+  },
+  {
+    "model": "pcbs.pcb",
+    "pk": 9,
+    "fields": {
+      "name": "DMG-BBA",
+      "group": 1
+    }
+  },
+  {
+    "model": "pcbs.pcb",
+    "pk": 10,
+    "fields": {
+      "name": "DMG-AAA",
+      "group": 1
+    }
+  },
+  {
+    "model": "pcbs.pcbrevision",
+    "pk": 5,
+    "fields": {
+      "pcb": 4,
+      "label": "1",
+      "changes": "",
+      "is_base_revision": false
+    }
+  },
+  {
+    "model": "pcbs.pcbrevision",
+    "pk": 6,
+    "fields": {
+      "pcb": 4,
+      "label": "2",
+      "changes": "",
+      "is_base_revision": false
+    }
+  },
+  {
+    "model": "pcbs.pcbrevision",
+    "pk": 7,
+    "fields": {
+      "pcb": 4,
+      "label": "",
+      "changes": "",
+      "is_base_revision": true
+    }
+  },
+  {
+    "model": "pcbs.pcbrevision",
+    "pk": 8,
+    "fields": {
+      "pcb": 1,
+      "label": "",
+      "changes": "",
+      "is_base_revision": true
+    }
+  },
+  {
+    "model": "pcbs.pcbrevision",
+    "pk": 9,
+    "fields": {
+      "pcb": 5,
+      "label": "",
+      "changes": "",
+      "is_base_revision": true
+    }
+  },
+  {
+    "model": "pcbs.pcbrevision",
+    "pk": 10,
+    "fields": {
+      "pcb": 6,
+      "label": "01",
+      "changes": "",
+      "is_base_revision": true
+    }
+  },
+  {
+    "model": "pcbs.pcbrevision",
+    "pk": 11,
+    "fields": {
+      "pcb": 7,
+      "label": "01",
+      "changes": "",
+      "is_base_revision": true
+    }
+  },
+  {
+    "model": "pcbs.pcbrevision",
+    "pk": 13,
+    "fields": {
+      "pcb": 9,
+      "label": "01",
+      "changes": "",
+      "is_base_revision": true
+    }
+  },
+  {
+    "model": "pcbs.pcbrevision",
+    "pk": 14,
+    "fields": {
+      "pcb": 10,
+      "label": "01",
+      "changes": "",
+      "is_base_revision": true
+    }
+  },
+  {
+    "model": "pcbs.pcbrevision",
+    "pk": 15,
+    "fields": {
+      "pcb": 6,
+      "label": "10",
+      "changes": "SMD components",
+      "is_base_revision": false
+    }
+  },
+  {
+    "model": "pcbs.pcbrevision",
+    "pk": 16,
+    "fields": {
+      "pcb": 8,
+      "label": "01",
+      "changes": "",
+      "is_base_revision": true
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 2,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 2,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 2,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 3,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 3,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 3,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can add system",
+      "content_type": 7,
+      "codename": "add_system"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can change system",
+      "content_type": 7,
+      "codename": "change_system"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can delete system",
+      "content_type": 7,
+      "codename": "delete_system"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can add system",
+      "content_type": 8,
+      "codename": "add_system"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can change system",
+      "content_type": 8,
+      "codename": "change_system"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can delete system",
+      "content_type": 8,
+      "codename": "delete_system"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add pcb",
+      "content_type": 9,
+      "codename": "add_pcb"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change pcb",
+      "content_type": 9,
+      "codename": "change_pcb"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete pcb",
+      "content_type": 9,
+      "codename": "delete_pcb"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can add revision",
+      "content_type": 10,
+      "codename": "add_revision"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can change revision",
+      "content_type": 10,
+      "codename": "change_revision"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can delete revision",
+      "content_type": 10,
+      "codename": "delete_revision"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can add PCB Revision",
+      "content_type": 10,
+      "codename": "add_pcbrevision"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can change PCB Revision",
+      "content_type": 10,
+      "codename": "change_pcbrevision"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can delete PCB Revision",
+      "content_type": 10,
+      "codename": "delete_pcbrevision"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can add PCB Group",
+      "content_type": 11,
+      "codename": "add_pcbgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can change PCB Group",
+      "content_type": 11,
+      "codename": "change_pcbgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can delete PCB Group",
+      "content_type": 11,
+      "codename": "delete_pcbgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 2,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 3,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can add game",
+      "content_type": 12,
+      "codename": "add_game"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can change game",
+      "content_type": 12,
+      "codename": "change_game"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can delete game",
+      "content_type": 12,
+      "codename": "delete_game"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can view game",
+      "content_type": 12,
+      "codename": "view_game"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can add language",
+      "content_type": 13,
+      "codename": "add_language"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can change language",
+      "content_type": 13,
+      "codename": "change_language"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can delete language",
+      "content_type": 13,
+      "codename": "delete_language"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can view language",
+      "content_type": 13,
+      "codename": "view_language"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can view system",
+      "content_type": 7,
+      "codename": "view_system"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can add game title",
+      "content_type": 14,
+      "codename": "add_gametitle"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can change game title",
+      "content_type": 14,
+      "codename": "change_gametitle"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can delete game title",
+      "content_type": 14,
+      "codename": "delete_gametitle"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can view game title",
+      "content_type": 14,
+      "codename": "view_gametitle"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view PCB Group",
+      "content_type": 11,
+      "codename": "view_pcbgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can view System",
+      "content_type": 8,
+      "codename": "view_system"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can view PCB Revision",
+      "content_type": 10,
+      "codename": "view_pcbrevision"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can view PCB",
+      "content_type": 9,
+      "codename": "view_pcb"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can add Manufacturer",
+      "content_type": 15,
+      "codename": "add_manufacturer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+      "name": "Can change Manufacturer",
+      "content_type": 15,
+      "codename": "change_manufacturer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+      "name": "Can delete Manufacturer",
+      "content_type": 15,
+      "codename": "delete_manufacturer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+      "name": "Can view Manufacturer",
+      "content_type": 15,
+      "codename": "view_manufacturer"
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "PCB Admin",
+      "permissions": [
+        25,
+        26,
+        27,
+        34,
+        35,
+        36,
+        31,
+        28,
+        32,
+        29,
+        33,
+        30,
+        22,
+        23,
+        24
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+      "name": "Dumps Admin",
+      "permissions": [
+        19,
+        20,
+        21
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$120000$I3MhQVT9E8Vt$+7JPt61NPNTdkae0S+wWr0HzV8XoXeYSLaxTzOHZ0uU=",
+      "last_login": "2019-05-02T13:57:10.738Z",
+      "is_superuser": true,
+      "username": "super",
+      "first_name": "",
+      "last_name": "",
+      "email": "tauwasser@tauwasser.eu",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2017-05-21T20:53:40Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$120000$7pUVbypYK7o8$UppdS20LDn4mpfXCpDk9iK/EHjdD82nM5zDy2AP1ptg=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Tauwasser",
+      "first_name": "",
+      "last_name": "",
+      "email": "tauwasser@tauwasser.eu",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2018-08-14T10:38:07Z",
+      "groups": [
+        2,
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2018-01-28T18:06:46.239Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "1",
+      "object_repr": "super",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"user_permissions\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2018-01-28T18:06:58.085Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "1",
+      "object_repr": "super",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"user_permissions\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2018-01-28T18:09:31.164Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "System object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2018-01-28T18:11:19.925Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Virtual Boy",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2018-01-28T18:24:30.239Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Game Boy",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2018-01-28T18:24:39.736Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Virtual Boy",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2018-01-29T18:32:08.513Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "PCB object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2018-01-29T18:45:09.438Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "SA-113",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"object\": \"-1\", \"name\": \"PCB Revision\"}}, {\"added\": {\"object\": \"-2\", \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2018-01-29T18:55:22.681Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "SA-113",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"object\": \"SA-113-1\", \"name\": \"PCB Revision\", \"fields\": [\"label\"]}}, {\"changed\": {\"object\": \"SA-113-2\", \"name\": \"PCB Revision\", \"fields\": [\"label\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2018-01-29T18:56:19.190Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "SA-113",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2018-01-29T19:01:14.661Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "SA-113",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"object\": \"SA-113\", \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2018-01-29T19:01:29.004Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "SA-113",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"object\": \"SA-113\", \"name\": \"PCB Revision\", \"fields\": [\"differences\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2018-01-29T19:03:37.374Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "SA-111",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2018-01-29T19:03:43.662Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "SA-111",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"object\": \"SA-111\", \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2018-01-29T19:03:57.138Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "SA-111",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"object\": \"SA-111\", \"name\": \"PCB Revision\", \"fields\": [\"differences\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2018-01-29T19:09:12.301Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "SA-113",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"system\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2018-01-29T19:13:02.781Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "SA-114",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"object\": \"SA-114\", \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2018-01-29T19:13:07.093Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "SA-114",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"object\": \"SA-114\", \"fields\": [\"differences\"], \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2018-01-29T19:24:52.917Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "SA-111",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"object\": \"SA-111\", \"fields\": [\"is_base_revision\"], \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2018-01-29T19:24:59.770Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "SA-113",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"object\": \"SA-113\", \"fields\": [\"is_base_revision\"], \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2018-01-29T19:25:02.938Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "SA-114",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"object\": \"SA-114\", \"fields\": [\"is_base_revision\"], \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2018-02-03T20:25:48.873Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Nintendo",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2018-02-03T20:25:57.059Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Sachen",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2018-02-03T20:26:03.446Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "Nintendo",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2018-02-03T20:54:55.914Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "SA-114",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"group\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2018-02-03T20:55:08.749Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "SA-113",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"group\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2018-02-03T20:55:15.813Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "SA-111",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"group\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2018-02-03T21:40:51.528Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "BEAN",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2018-02-03T21:41:04.848Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "BEAN",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"object\": \"BEAN-01\", \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2018-02-03T21:44:51.449Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "4",
+      "object_repr": "Game Boy/Gowin",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2018-02-03T21:57:11.832Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "DMG-BEAN",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"name\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2018-02-03T21:58:19.732Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "7",
+      "object_repr": "DMG-BCA",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"object\": \"DMG-BCA-01\", \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2018-02-03T21:59:01.209Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "8",
+      "object_repr": "DMG-BBA",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"object\": \"DMG-BBA-01\", \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2018-02-03T21:59:01.383Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "9",
+      "object_repr": "DMG-BBA",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"object\": \"DMG-BBA-01\", \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2018-02-03T22:11:54.627Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "10",
+      "object_repr": "DMG-AAA",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"object\": \"DMG-AAA-01\", \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2018-04-08T15:13:54.080Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "DMG-BEAN",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"object\": \"DMG-BEAN-10\", \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2018-04-08T15:37:51.037Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "8",
+      "object_repr": "DMG-BFAN",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"name\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2018-04-08T15:57:45.872Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "8",
+      "object_repr": "DMG-BFAN",
+      "action_flag": 2,
+      "change_message": "[{\"deleted\": {\"object\": \"DMG-BFAN-01\", \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2018-04-08T15:58:02.315Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "8",
+      "object_repr": "DMG-BFAN",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"object\": \"DMG-BFAN-01\", \"name\": \"PCB Revision\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2018-08-14T10:38:07.236Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "Tauwasser",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2018-08-14T10:39:13.049Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "Tauwasser",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"email\", \"is_staff\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2018-08-14T10:39:43.965Z",
+      "user": 1,
+      "content_type": 2,
+      "object_id": "1",
+      "object_repr": "PCB Admin",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2018-08-14T10:39:53.502Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "Tauwasser",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"groups\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2018-08-16T08:47:09.656Z",
+      "user": 1,
+      "content_type": 2,
+      "object_id": "1",
+      "object_repr": "PCB Admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"permissions\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2018-08-16T08:47:17.573Z",
+      "user": 1,
+      "content_type": 2,
+      "object_id": "1",
+      "object_repr": "PCB Admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"permissions\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2018-08-16T08:47:27.493Z",
+      "user": 1,
+      "content_type": 2,
+      "object_id": "2",
+      "object_repr": "Dumps admin",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2018-08-16T08:47:35.842Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "Tauwasser",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"groups\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2018-08-16T08:47:42.079Z",
+      "user": 1,
+      "content_type": 2,
+      "object_id": "2",
+      "object_repr": "Dumps Admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"name\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2018-08-16T12:10:08.066Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Language object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2018-08-16T12:10:12.678Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "Language object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2018-08-16T12:10:19.057Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "3",
+      "object_repr": "Language object (3)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2018-08-16T12:10:29.040Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "4",
+      "object_repr": "Language object (4)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2018-08-16T13:01:56.948Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Game object (7)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"object\": \"GameTitle object (1)\", \"name\": \"game title\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2018-08-16T13:02:24.530Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Game object (7)",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"object\": \"GameTitle object (2)\", \"name\": \"game title\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2018-08-16T13:04:52.027Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "4",
+      "object_repr": "ja-Latn",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"isLatinScript\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2018-08-16T13:04:56.191Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "en",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"isLatinScript\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2018-08-16T13:04:58.150Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "de",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"isLatinScript\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2018-08-16T13:40:47.136Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Genjin Collection",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"langs\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2018-08-16T13:53:35.549Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Genjin Collection(Ja)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"langs\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2018-08-16T13:54:50.209Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Genjin Collection (De,Ja)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"langs\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2018-08-16T13:54:52.912Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Genjin Collection (Ja)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"langs\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2018-08-16T14:03:35.051Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Genjin Collection Test",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"langs\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2018-08-16T14:04:27.695Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Genjin Collection Test",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"langs\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2018-08-16T14:18:47.330Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "5",
+      "object_repr": "fr",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2018-08-16T14:19:16.079Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "6",
+      "object_repr": "it",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2018-08-16T14:22:01.111Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "7",
+      "object_repr": "es",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2018-08-16T14:22:14.363Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "8",
+      "object_repr": "sv",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2018-08-16T14:22:27.658Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "9",
+      "object_repr": "nl",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2018-08-16T14:25:15.854Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "8",
+      "object_repr": "Muppets, The (De,En,Es,Fr,It,Nl,Sv)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"object\": \"GameTitle object (3)\", \"name\": \"game title\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2018-08-16T14:32:15.749Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "9",
+      "object_repr": "Bubble Bobble",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"object\": \"GameTitle object (4)\", \"name\": \"game title\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2018-08-16T14:32:46.705Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "10",
+      "object_repr": "zh-Hant",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2018-08-16T14:32:55.267Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "11",
+      "object_repr": "zh-Hans",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2018-08-16T14:34:31.938Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "9",
+      "object_repr": "Bubble Bobble",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"object\": \"GameTitle object (5)\", \"name\": \"game title\"}}, {\"added\": {\"object\": \"GameTitle object (6)\", \"name\": \"game title\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2018-08-16T14:36:55.780Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "11",
+      "object_repr": "zh-Hans",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"isDisplayLanguage\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2018-08-16T14:36:58.117Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "10",
+      "object_repr": "zh-Hant",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"isDisplayLanguage\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2018-08-16T14:39:09.428Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "4",
+      "object_repr": "ja-Latn",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2018-08-16T14:39:42.771Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "3",
+      "object_repr": "ja",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2018-08-16T14:40:07.649Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "7",
+      "object_repr": "es",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2018-08-16T14:40:13.510Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "en",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2018-08-16T14:40:18.347Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "de",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2018-08-16T14:42:50.055Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "11",
+      "object_repr": "zh-Hans",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2018-08-16T14:42:53.426Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "10",
+      "object_repr": "zh-Hant",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2018-08-16T14:43:04.644Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "9",
+      "object_repr": "nl",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+      "action_time": "2018-08-16T14:43:08.110Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "7",
+      "object_repr": "es",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+      "action_time": "2018-08-16T14:43:30.795Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "8",
+      "object_repr": "sv",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+      "action_time": "2018-08-16T14:43:43.937Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "6",
+      "object_repr": "it",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+      "action_time": "2018-08-16T14:43:57.339Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "5",
+      "object_repr": "fr",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+      "action_time": "2018-08-16T14:46:15.232Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "8",
+      "object_repr": "Muppets, The (De,En,Es,Fr,It,Nl,Sv)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+      "action_time": "2018-08-17T16:22:08.183Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "German",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+      "action_time": "2018-08-17T16:22:13.714Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "English",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+      "action_time": "2018-08-17T16:26:56.344Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "3",
+      "object_repr": "Japanese",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+      "action_time": "2018-08-17T16:27:11.562Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "4",
+      "object_repr": "Japanese (transliterated)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+      "action_time": "2018-08-17T16:27:25.509Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "5",
+      "object_repr": "French",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+      "action_time": "2018-08-17T16:27:35.084Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "6",
+      "object_repr": "Italian",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+      "action_time": "2018-08-17T16:27:46.239Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "7",
+      "object_repr": "Spanish",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+      "action_time": "2018-08-17T16:27:55.425Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "8",
+      "object_repr": "Swedish",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+      "action_time": "2018-08-17T16:28:02.359Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "9",
+      "object_repr": "Dutch",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+      "action_time": "2018-08-17T16:28:20.389Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "10",
+      "object_repr": "Chinese (Traditional)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+      "action_time": "2018-08-17T16:28:32.423Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "11",
+      "object_repr": "Chinese (Simplified)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+      "action_time": "2018-08-17T16:28:53.520Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Game Boy",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+      "action_time": "2018-08-17T16:28:58.224Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Virtual Boy",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+      "action_time": "2018-08-17T16:30:26.526Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "f83918e4-9fdb-48d8-aa41-12a9cb371e5b",
+      "object_repr": "Genjin Collection",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"game title\", \"object\": \"Genjin Collection\"}}, {\"added\": {\"name\": \"game title\", \"object\": \"\\u539f\\u4eba\\u3000\\u30b3\\u30ec\\u30af\\u30b7\\u30e7\\u30f3\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+      "action_time": "2018-08-17T16:31:51.230Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "55fa3f0a-a8c8-4f42-adf7-8c13d2e9bfd9",
+      "object_repr": "Muppets, The (De,En,Es,Fr,It,Nl,Sv)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"game title\", \"object\": \"Muppets, The\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+      "action_time": "2018-08-17T16:32:46.182Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "f0a09c52-eb59-4f26-8ed6-71f6fb74e1f2",
+      "object_repr": "Bubble Bobble",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"game title\", \"object\": \"Bubble Bobble\"}}, {\"added\": {\"name\": \"game title\", \"object\": \"\\u6ce1\\u6ce1\\u9f99\"}}, {\"added\": {\"name\": \"game title\", \"object\": \"\\u6ce1\\u6ce1\\u9f8d\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+      "action_time": "2018-08-17T17:54:10.445Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "4",
+      "object_repr": "Japanese (romanized)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"name\", \"localName\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+      "action_time": "2019-05-02T14:24:35.247Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "DMG-BEAN",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"name\": \"PCB Revision\", \"fields\": [\"changes\"], \"object\": \"DMG-BEAN-10\"}}]"
+    }
+  }
+]
