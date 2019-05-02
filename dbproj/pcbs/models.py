@@ -25,23 +25,10 @@ class System(models.Model):
         return self.name
 
 
-class PCBGroup(models.Model):
-    system = models.ForeignKey(System, on_delete=models.SET_NULL, null=True)
-    name = models.CharField(max_length=16)
-    is_default_group = models.BooleanField(default=False,verbose_name='Default Group')
-
-    class Meta:
-        verbose_name = 'PCB Group'
-        verbose_name_plural = 'PCB Groups'
-        unique_together = (('system', 'name'),)
-
-    def __str__(self):
-        return self.system.name + '/' + self.name
-
-
 class PCB(models.Model):
     name = models.CharField(max_length=32)
-    group = models.ForeignKey(PCBGroup, on_delete=models.SET_NULL, null=True)
+    system = models.ForeignKey(System, on_delete=models.SET_NULL, null=True)
+    manufacturer = models.ForeignKey(Manufacturer, on_delete=models.SET_NULL, null=True)
 
     class Meta:
         verbose_name = 'PCB'

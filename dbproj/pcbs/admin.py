@@ -10,7 +10,7 @@ class PCBRevisionInline(admin.StackedInline):
 
 class PCBAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None, {'fields': ['name', 'group']}),
+        (None, {'fields': ['name', 'system', 'manufacturer']}),
     ]
     inlines = [PCBRevisionInline]
 
@@ -18,5 +18,4 @@ class PCBAdmin(admin.ModelAdmin):
 admin.site.register(Manufacturer)
 admin.site.register(System)
 admin.site.register(PCB, PCBAdmin)
-admin.site.register(PCBGroup)
 
