@@ -1,7 +1,6 @@
 from django.contrib import admin
 
-from .models import System
-from .models import PCB, PCBGroup, PCBRevision
+from .models import *
 
 
 class PCBRevisionInline(admin.StackedInline):
@@ -16,6 +15,7 @@ class PCBAdmin(admin.ModelAdmin):
     inlines = [PCBRevisionInline]
 
 
+admin.site.register(Manufacturer)
 admin.site.register(System)
 admin.site.register(PCB, PCBAdmin)
 admin.site.register(PCBGroup)
