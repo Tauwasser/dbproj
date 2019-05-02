@@ -2,7 +2,9 @@
 	<ul>
 	{% for system, manufacturer_pcbs in sidebar.items %}
 	<li>
-		<input type="checkbox" id="item{{ forloop.counter0 }}"{% if system == pcb.system %} checked="checked"{% endif %}/>
+		<input type="checkbox" id="item{{ forloop.counter0 }}"
+			{% if system == pcb.system %} checked="checked"{% endif %}
+		/>
 		<label{% if system == pcb.system %} class="label-icon"{% endif %} for="item{{ forloop.counter0 }}">{{ system.name }}</label>
 		<ul>
 		{% for manufacturer, pcbs in manufacturer_pcbs.items %}
