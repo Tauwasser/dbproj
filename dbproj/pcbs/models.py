@@ -15,7 +15,6 @@ class Manufacturer(models.Model):
 
 class System(models.Model):
     name = models.CharField(max_length=64)
-    manufacturer = models.CharField(max_length=16)
     manufacturer_fk = models.ForeignKey(Manufacturer, on_delete=models.SET_NULL, null=True)
 
     class Meta:
