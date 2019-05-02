@@ -1,15 +1,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 
 from .models import Manufacturer, System, PCB
-
-
-def index(request):
-    systems = System.objects.order_by('name')
-    return render(request, 'pcbs/index.html', {'systems': systems})
 
 
 def getSidebarData():
@@ -26,20 +21,30 @@ def getSidebarData():
     return sidebar
 
 
-def details(request, system, pcb):
-    system = System.objects.get(name__iexact=system)
-
+def index(request, system=None):
+    sidebar = getSidebarData()
+    if (system is not None):
+        system = get_object_or_404(System, name__iexact=system)
     if (system is None):
-        # TODO: re-route to index
-        pass
+        system = System.objects.first()
+    defManufacturer = Manufacturer.objects.first()
+    return render(request,
+                  'pcbs/index.html',
+                  {
+                      'sidebar': sidebar,
+                      'pcb': PCB(name='Bogus', system=system, manufacturer=defManufacturer)
+                  }
+                  )
+
+
+def details(request, system, pcb):
+
+    system = get_object_or_404(System, name__iexact=system)
 
     pcb_name = pcb if pcb.count('-') <= 1 else pcb.rsplit('-', 1)[0]
     pcb_revision = None if pcb.count('-') <= 1 else pcb.rsplit('-', 1)[1]
 
-    pcb = PCB.objects.get(name__iexact=pcb_name, system=system)
-    if (pcb is None):
-        # TODO: re-route to system
-        pass
+    pcb = get_object_or_404(PCB, name__iexact=pcb_name, system=system)
 
     sidebar = getSidebarData()
     return render(request,
