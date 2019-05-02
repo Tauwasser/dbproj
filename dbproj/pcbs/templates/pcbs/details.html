@@ -1,10 +1,15 @@
 {% load static %}
 <head><link rel="stylesheet" type="text/css" href="{% static 'pcbs/details.css' %}" /></head>
 <body>
-<div style="width: 10%; float: left;">{% include 'pcbs/sidebar.html' %}</div>
-<div style="width: 90%;">
-{% for pcb_candidate in pcb_candidates.all %}
-- {{pcb_candidate.name}}: {% for pcb_revision in pcb_candidate.pcbrevision_set.all %} * {{ pcb_revision }} {% endfor %}
+<div style="width: 10%; height: 100%; position: fixed;">{% include 'pcbs/sidebar.html' %}</div>
+<div style="width: 90%; margin-left: 10%;">
+{% for pcb_revision in pcb.pcbrevision_set.all %}
+    <div>
+    <h1>{{ pcb_revision }}</h1>
+        {% if not pcb_revision.is_base_revision %}
+            Changes from previous revision: {{ pcb_revision.changes }}
+        {% endif %}
+    </div>
 {% endfor %}
 </div>
 </body>

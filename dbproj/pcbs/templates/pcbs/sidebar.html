@@ -1,16 +1,22 @@
 <div class="nav-tree">
 	<ul>
-	{% for system in systems.all|dictsort:"name" %}
-	<li><input type="checkbox" id="item{{ forloop.counter0 }}"{% if system == sel_system %} checked="checked"{% endif %}/><label{% if system == sel_system %} class="label-icon"{% endif %} for="item{{ forloop.counter0 }}">{{ system.name }}</label>
+	{% for system, manufacturer_pcbs in sidebar.items %}
+	<li>
+		<input type="checkbox" id="item{{ forloop.counter0 }}"{% if system == pcb.system %} checked="checked"{% endif %}/>
+		<label{% if system == pcb.system %} class="label-icon"{% endif %} for="item{{ forloop.counter0 }}">{{ system.name }}</label>
 		<ul>
-		{% for group in system.pcbgroup_set.all|dictsort:"name"|dictsortreversed:"is_default_group" %}
-		<li><input type="checkbox" id="item{{ forloop.parentloop.counter0 }}-{{ forloop.counter0 }}"{% if group.is_default_group %} checked="checked"{% endif %}/><label for="item{{ forloop.parentloop.counter0 }}-{{ forloop.counter0 }}">{{ group.name }}</label>
+		{% for manufacturer, pcbs in manufacturer_pcbs.items %}
+		{% if pcbs %}
+		<li>
+			<input type="checkbox" id="item{{ forloop.parentloop.counter0 }}-{{ forloop.counter0 }}"{% if manufacturer == pcb.manufacturer %} checked="checked"{% endif %}/>
+			<label for="item{{ forloop.parentloop.counter0 }}-{{ forloop.counter0 }}">{{ manufacturer }}</label>
 			<ul>
-			{% for pcb in group.pcb_set.all|dictsort:"name" %}
+			{% for pcb in pcbs|dictsort:"name" %}
 			<li><a href="{% url 'details' system pcb.name %}">{{ pcb.name }}</a></li>
 			{% endfor %}
 			</ul>
 		</li>
+		{% endif %}
 		{% endfor %}
 		</ul>
 	</li>
