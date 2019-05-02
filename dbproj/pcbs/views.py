@@ -6,11 +6,11 @@ from django.http import HttpResponse
 
 from .models import System, PCB
 
-# Create your views here.
 
 def index(request):
     systems = System.objects.order_by('name')
     return render(request, 'pcbs/index.html', {'systems': systems})
+
 
 def details(request, system, pcb):
     systems = System.objects
@@ -19,4 +19,11 @@ def details(request, system, pcb):
     pcb_revision = None if pcb.count('-') <= 1 else pcb.rsplit('-', 1)[1]
     sel_pcb = None
     pcb_candidates = PCB.objects.filter(name__iexact=pcb_name, group__system=sel_system)
-    return render(request, 'pcbs/details.html', {'systems': systems, 'sel_system': sel_system, 'pcb_candidates': pcb_candidates})
+    return render(request,
+                  'pcbs/details.html',
+                  {
+                      'systems': systems,
+                      'sel_system': sel_system,
+                      'pcb_candidates': pcb_candidates
+                  }
+                  )
