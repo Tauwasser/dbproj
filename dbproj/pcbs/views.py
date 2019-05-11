@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 
-from .models import Manufacturer, System, PCB
+from .models import Manufacturer, System, PCB, PCBRevision
 
 
 def getSidebarData():
@@ -21,10 +21,10 @@ def getSidebarData():
     return sidebar
 
 
-def index(request, system=None):
+def index(request, system_slug=None):
     sidebar = getSidebarData()
-    if (system is not None):
-        system = get_object_or_404(System, name__iexact=system)
+    if (system_slug is not None):
+        system = get_object_or_404(System, slug__iexact=system_slug)
     if (system is None):
         system = System.objects.first()
     defManufacturer = Manufacturer.objects.first()
@@ -37,14 +37,23 @@ def index(request, system=None):
                   )
 
 
-def details(request, system, pcb):
+def details(request, system_slug, pcb_slug):
 
-    system = get_object_or_404(System, name__iexact=system)
+    system = get_object_or_404(System, slug__iexact=system_slug)
 
-    pcb_name = pcb if pcb.count('-') <= 1 else pcb.rsplit('-', 1)[0]
-    pcb_revision = None if pcb.count('-') <= 1 else pcb.rsplit('-', 1)[1]
+    pcb_parts = pcb_slug.rsplit('-', 1)
+    pcb_name = pcb_parts[0]
+    pcb_revision = pcb_parts[-1]
 
-    pcb = get_object_or_404(PCB, name__iexact=pcb_name, system=system)
+    try:
+        pcb_revision = PCBRevision.objects.get(
+                                               label__iexact=pcb_revision,
+                                               pcb__name__iexact=pcb_name,
+                                               pcb__system=system
+                                               )
+        pcb = pcb_revision.pcb
+    except PCBRevision.DoesNotExist:
+        pcb = get_object_or_404(PCB, name__iexact=pcb_slug, system=system)
 
     sidebar = getSidebarData()
     return render(request,
