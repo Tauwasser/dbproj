@@ -12,7 +12,7 @@
 {% for pcb_revision in pcb.pcbrevision_set.all %}
     <div>
     <h1>{{ pcb_revision }}</h1>
-        {% if not pcb_revision.is_base_revision %}
+        {% if pcb_revision.changes %}
             Changes from previous revision: {{ pcb_revision.changes }}
         {% endif %}
     </div>
