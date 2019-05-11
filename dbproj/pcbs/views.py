@@ -25,7 +25,7 @@ def index(request, system_slug=None):
     sidebar = getSidebarData()
     if (system_slug is not None):
         system = get_object_or_404(System, slug__iexact=system_slug)
-    if (system is None):
+    elif (system_slug is None):
         system = System.objects.first()
     defManufacturer = Manufacturer.objects.first()
     return render(request,
