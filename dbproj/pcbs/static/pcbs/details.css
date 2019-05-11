@@ -124,3 +124,39 @@
     }
 }
 
+body
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.pcb-revision
+{
+    background-color: lightgray;
+    border-radius: 7px;
+    margin: 15px 30px;
+}
+
+.pcb-revision-details
+{
+    min-height: 40px;
+    padding: 10px;
+}
+
+.pcb-revision-name
+{
+    font-family: "Archivo", sans-serif;
+    font-size: 32px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 7px 7px 0px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pcb-revision-name a
+{
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}

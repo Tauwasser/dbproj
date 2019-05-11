@@ -2,21 +2,26 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Archivo|Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{% static 'pcbs/details.css' %}" />
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Document</title>
 </head>
 <body>
-<div style="width: 10%; height: 100%; position: fixed;">{% include 'pcbs/sidebar.html' %}</div>
-<div style="width: 90%; margin-left: 10%;">
+<div class="sidebar" style="width: 10%; height: 100%; top: 0; left: 0; position: fixed;">{% include 'pcbs/sidebar.html' %}</div>
+<div class="details" style="width: 90%; margin-left: 10%; top: 0; right: 0; position: fixed;">
 {% for pcb_revision in pcb.pcbrevision_set.all %}
-	<div>
-		<a id="#{{ pcb_revision }}" href="#{{ pcb_revision }}">
-		<h1>{{ pcb_revision }}</h1>
-		</a>
+	<div class="pcb-revision">
+		<div class="pcb-revision-name">
+			<a id="#{{ pcb_revision }}" href="#{{ pcb_revision }}">
+				{{ pcb_revision }}
+			</a>
+		</div>
+		<div class="pcb-revision-details">
 			{% if pcb_revision.changes %}
-			Changes from previous revision: {{ pcb_revision.changes }}
-		{% endif %}
+				Changes from previous revision: {{ pcb_revision.changes }}
+			{% endif %}
+		</div>
 	</div>
 {% endfor %}
 </div>
