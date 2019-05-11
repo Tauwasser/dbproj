@@ -16,7 +16,7 @@
 			<label for="item{{ forloop.parentloop.counter0 }}-{{ forloop.counter0 }}">{{ manufacturer }}</label>
 			<ul>
 			{% for pcb in pcbs|dictsort:"name" %}
-			<li><a href="{% url 'details' system pcb.name %}">{{ pcb.name }}</a></li>
+			<li><a href="{% url 'details' system.slug pcb.name %}">{{ pcb.name }}</a></li>
 			{% endfor %}
 			</ul>
 		</li>
