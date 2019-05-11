@@ -4,6 +4,7 @@ from .models import *
 
 
 class SystemAdmin(admin.ModelAdmin):
+    list_display = ('name', 'manufacturer',)
     prepopulated_fields = {"slug": ("name",)}
 
 
@@ -13,6 +14,8 @@ class PCBRevisionInline(admin.StackedInline):
 
 
 class PCBAdmin(admin.ModelAdmin):
+    list_display = ('name', 'system', 'manufacturer',)
+
     fieldsets = [
         (None, {'fields': ['name', 'system', 'manufacturer']}),
     ]
